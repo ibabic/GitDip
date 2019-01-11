@@ -4,6 +4,7 @@ import { DragSource, DropTarget } from 'react-dnd';
 import flow from 'lodash/flow';
 
 const style = {
+	position: 'relative',
 	border: '2px solid gray',
 	padding: '0.5rem 1rem',
 	margin: '.5rem',

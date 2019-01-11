@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import update from 'immutability-helper';
 import Card from './Item';
 import { DropTarget } from 'react-dnd';
+import classes from './Target.css';
 import { Z_PARTIAL_FLUSH } from 'zlib';
 const math = require('mathjs');
 
@@ -68,7 +69,8 @@ class Container extends Component {
 			width: "200px",
 			minHeight: "350px",
 			height: "500px",
-			border: '2px solid gray'
+			border: '2px solid gray',
+			position: 'relative'
 		};
 		
 		
@@ -120,7 +122,10 @@ class Container extends Component {
 							
 					);
 				})}
-				<p>{this.props.Over ? res : null}</p>
+				<div className={classes.animation}>
+					<p className={classes.animation_label}>{this.props.Over ? res : null}</p>
+				</div>
+				
 			</div>
 		);
   }

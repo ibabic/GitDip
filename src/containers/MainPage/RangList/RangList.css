@@ -3,12 +3,13 @@
     max-width: 410px;
     min-height: 300px;
     max-height: 360px;
+    margin-bottom: 40px;
     
 }
 .div{
     overflow:scroll; 
     width: 410px;
-    height: 360px;
+    height: 300px;
     
 }
 .id{
